@@ -1,5 +1,5 @@
-# Lab2d
-### Syed Tanveer & Eileen Xia (team 7)
+# MySQL Database Application
+## Constructing the database (SQL, data, Stored Procedures, Triggers, and Views)
 ### CS61
 
 Make sure to have mysql installed. Run these commands:
