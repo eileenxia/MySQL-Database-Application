@@ -1,6 +1,50 @@
 # MySQL Database Application
-## Constructing the database (SQL, data, Stored Procedures, Triggers, and Views)
 ## Eileen Xia and Syed Tanveer
+
+## Constructing the database (SQL, data, Stored Procedures, Triggers, and Views)
+
+#### File Description
+
+##### tables.sql
+  Tables is a file that contains the schema for the database. Most of the fields are set to be NOT NULL. However, we felt like certain fields could be left null, such as Manuscript_score, because new manuals wouldn't have a score when they were first entered.
+
+##### insert.sql
+  Insert.sql holds all of the data that we have created to test for our database
+
+##### views.sql
+  Views.sql is all of the views that were requested to be made for this lab. There should be 6 views that are added to the database. Those views are
+
+  - LeadAuthorManuscripts
+  - AnyAuthorManuscripts
+  - PublishedIssues
+  - ReviewQueue
+  - WhatsLeft
+  - ReviewStatus
+
+##### triggerssetup.sql
+
+This file is a concatonation of tables and insert to make it easier for the tester to run the database with some data points to test.
+
+##### triggers.sql
+This file contains three triggers we have made for our database. The three triggers include:
+
+  - icode_trigger;
+  - on_resign_trigger;
+  - on_accepted;
+
+##### triggerstest.sql
+
+triggerstest will contain all of our test cases for the triggers functions there will be 3 tests for icode_trigger, 1 test for on_accepted, and 2 tests for on_resign_trigger.
+
+##### function.sql
+
+function.sql contains ManuscriptDecision which will calculate the avg score for a manuscript based on all of the reviewers individual scores. The function will take all of the reviewers scores, avg them, and then add them up for a final score. We have set the minimum score to be 35 in order for a manuscript to be accepted for publishing.
+
+##### functiontest.sql
+
+this file contains 3 test cases that show the versitility of the ManuscriptDecision function. 
+
+## Front end application
 
 Make sure to have mysql installed. Run these commands:
 `brew install mysql`
