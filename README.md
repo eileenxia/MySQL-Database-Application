@@ -1,6 +1,6 @@
 # MySQL Database Application
 ## Constructing the database (SQL, data, Stored Procedures, Triggers, and Views)
-### CS61
+## Eileen Xia and Syed Tanveer
 
 Make sure to have mysql installed. Run these commands:
 `brew install mysql`
